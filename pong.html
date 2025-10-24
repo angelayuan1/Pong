@@ -23,6 +23,7 @@
     const paddleHeightBase = 100;
     const paddleInset = 30;
     const ballDiameter = 14;
+    const angryBirdScale = 4;
     const initialBallSpeed = 420; // px/s
     const maxBallSpeed = 900; // px/s
     const ballSpeedIncrementFactor = 1.035; // per paddle hit
@@ -39,7 +40,7 @@
     const ball = {
       x: 0,
       y: 0,
-      r: ballDiameter / 2,
+      r: (ballDiameter / 2) * angryBirdScale,
       vx: 0,
       vy: 0,
       speed: initialBallSpeed
